@@ -60,7 +60,7 @@ activateForm.addEventListener("submit", (e) => {
     step1.style.display = "none";
     step2.style.display = "block";
    }, 2000)
-  /*
+  
     fetch('https://hooks.zapier.com/hooks/catch/5400645/3tgzrsd/', options)
       .then(response => {
         if (response.ok) {
@@ -73,5 +73,5 @@ activateForm.addEventListener("submit", (e) => {
       .catch(error => {
         console.error('Error sending form data:', error);
       });
-      */
+      
   }
