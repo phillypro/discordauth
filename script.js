@@ -2,6 +2,13 @@ prepopulateEmailField();
 let activateForm = document.getElementById("activate");
 activateForm.addEventListener("submit", (e) => {
     e.preventDefault();
+    
+    const discord =  document.getElementById('discord');
+    if (discord.value.includes("#")) {
+      alert("Please only include the username remove the # sign and 4 number identifier");
+      return false;
+    }
+    
     sendFormData();
 
     // handle submit
